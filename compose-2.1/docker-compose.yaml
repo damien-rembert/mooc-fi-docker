@@ -1,0 +1,11 @@
+services:
+  sws:
+    image: devopsdockeruh/simple-web-service
+
+    volumes:
+      - ./text.log:/usr/src/app/text.log
+
+  whoami:
+    image: jwilder/whoami
+    ports:
+      - 8000:8000
